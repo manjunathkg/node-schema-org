@@ -1,3 +1,13 @@
+# Project based on node-schema-org
+JSON format generated changed to have no arrays.
+To make it work on windows, files under lib were changed to comment out "schemas" file creation.. doesnt work
+on win xp.
+TO make it work on windows, added cheerios instead on jsdom
+Creating schemaList from remote is still not working.. start with a "schemas" folder parallel schema-org folder and 
+have a file there called schmeaList.json with list of schema.org schemas to pull.. edit this list if your need
+only a subset.
+
+
 # node-schema-org
 
 A node.js library that retrieves, parses and provides all schemas from schema.org
