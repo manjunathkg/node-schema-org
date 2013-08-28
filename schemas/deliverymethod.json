@@ -1,0 +1,13 @@
+{
+  "type": "DeliveryMethod",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "type": "DiagnosticLab",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    },
+    "Place": {
+      "": {
+        "name": "",
+        "description": "The telephone number.",
+        "type": "Text"
+      }
+    },
+    "Organization": {
+      "": {
+        "name": "",
+        "description": "The Value-added Tax ID of the organisation or person.",
+        "type": "Text"
+      }
+    },
+    "LocalBusiness": {
+      "": {
+        "name": "",
+        "description": "The price range of the business, for example $$$.",
+        "type": "Text"
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "A diagnostic test or procedure offered by this lab.",
+      "type": "MedicalTest"
+    }
+  }
+}

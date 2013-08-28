@@ -1,0 +1,34 @@
+{
+  "type": "ExerciseAction",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    },
+    "Action": {
+      "": {
+        "name": "",
+        "description": "When the Action was performed: start time. This is for actions that span a period of time. e.g. John wrote a book from *January* to December.",
+        "type": "DateTime"
+      }
+    },
+    "PlayAction": {
+      "": {
+        "name": "",
+        "description": "Upcoming or past event associated with this place or organization.",
+        "type": "Event"
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "A sub property of location. The final location of the object or the agent after the action.",
+      "type": "Place"
+    }
+  }
+}

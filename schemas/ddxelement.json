@@ -1,0 +1,27 @@
+{
+  "type": "DDxElement",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    },
+    "MedicalEntity": {
+      "": {
+        "name": "",
+        "description": "A medical study or trial related to this entity.",
+        "type": "MedicalStudy"
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "One of a set of signs and symptoms that can be used to distinguish this diagnosis from others in the differential diagnosis.",
+      "type": "MedicalSignOrSymptom"
+    }
+  }
+}

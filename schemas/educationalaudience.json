@@ -1,0 +1,20 @@
+{
+  "type": "EducationalAudience",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "An educationalRole of an EducationalAudience",
+      "type": "Text"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "DataCatalog",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    },
+    "CreativeWork": {
+      "": {
+        "name": "",
+        "description": "An embedded video object.",
+        "type": "VideoObject"
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "A dataset contained in a catalog.",
+      "type": "Dataset"
+    }
+  }
+}

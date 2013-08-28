@@ -7,7 +7,9 @@ var fs = require('fs'),
     async = require('async'),
     optimist = require('optimist'),
     neuron = require('neuron'),
+    winston = require('winston'),
     schemaOrg = require('../lib');
+
   
 //
 // Setup the optimist CLI arguments
@@ -63,10 +65,12 @@ function streamChild (params, callback) {
   var child = spawn('node', params);
   
   child.stdout.on('data', function (data) {
+    schemaOrg.logger.info('data ' + data.toString().yellow + ' has arrived.');
     process.stdout.write(data.toString());
   });
   
   child.stderr.on('data', function (data) {
+    schemaOrg.logger.info('data ' + data.toString().red + ' has ERRORED.');
     process.stdout.write(data.toString());
   });
   

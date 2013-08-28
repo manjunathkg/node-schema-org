@@ -1,0 +1,41 @@
+{
+  "type": "APIReference",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    },
+    "CreativeWork": {
+      "": {
+        "name": "",
+        "description": "An embedded video object.",
+        "type": "VideoObject"
+      }
+    },
+    "Article": {
+      "": {
+        "name": "",
+        "description": "The number of words in the text of the Article.",
+        "type": "Integer"
+      }
+    },
+    "TechArticle": {
+      "": {
+        "name": "",
+        "description": "Proficiency needed for this content; expected values: 'Beginner', 'Expert'.",
+        "type": "Text"
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "Type of app development: phone, Metro style, desktop, XBox, etc.",
+      "type": "Text"
+    }
+  }
+}

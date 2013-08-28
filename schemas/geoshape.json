@@ -1,0 +1,20 @@
+{
+  "type": "GeoShape",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more spacedelimited points where the first and final points are identical.",
+      "type": "Text"
+    }
+  }
+}

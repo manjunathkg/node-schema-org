@@ -1,0 +1,27 @@
+{
+  "type": "MedicalProcedure",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    },
+    "MedicalEntity": {
+      "": {
+        "name": "",
+        "description": "A medical study or trial related to this entity.",
+        "type": "MedicalStudy"
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "The type of procedure, for example Surgical, Noninvasive, or Percutaneous.",
+      "type": "MedicalProcedureType"
+    }
+  }
+}

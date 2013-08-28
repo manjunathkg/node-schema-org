@@ -1,0 +1,20 @@
+{
+  "type": "MedicalEntity",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "A medical study or trial related to this entity.",
+      "type": "MedicalStudy"
+    }
+  }
+}

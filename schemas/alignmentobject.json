@@ -1,0 +1,20 @@
+{
+  "type": "AlignmentObject",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "The URL of a node in an established educational framework.",
+      "type": "URL"
+    }
+  }
+}

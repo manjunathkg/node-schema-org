@@ -1,0 +1,27 @@
+{
+  "type": "MedicalGuidelineContraindication",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    },
+    "MedicalEntity": {
+      "": {
+        "name": "",
+        "description": "A medical study or trial related to this entity.",
+        "type": "MedicalStudy"
+      }
+    },
+    "MedicalGuideline": {
+      "": {
+        "name": "",
+        "description": "The medical conditions, treatments, etc. that are the subject of the guideline.",
+        "type": "MedicalEntity"
+      }
+    }
+  }
+}

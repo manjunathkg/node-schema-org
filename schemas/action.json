@@ -1,0 +1,20 @@
+{
+  "type": "Action",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "When the Action was performed: start time. This is for actions that span a period of time. e.g. John wrote a book from *January* to December.",
+      "type": "DateTime"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "MedicalAudience",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    },
+    "PeopleAudience": {
+      "": {
+        "name": "",
+        "description": "Minimal age recommended for viewing content",
+        "type": "Number"
+      }
+    },
+    "MedicalEntity": {
+      "": {
+        "name": "",
+        "description": "A medical study or trial related to this entity.",
+        "type": "MedicalStudy"
+      }
+    }
+  }
+}

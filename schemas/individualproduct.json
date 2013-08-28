@@ -1,0 +1,30 @@
+{
+  "type": "IndividualProduct",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    },
+    "Product": {
+      "": {
+        "name": "",
+        "description": "The width of the item.",
+        "type": {
+          "Distance": {},
+          "QuantitativeValue": {}
+        }
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "The serial number or any alphanumeric identifier of a particular product. When attached to an offer, it is a shortcut for the serial number of the product included in the offer.",
+      "type": "Text"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "AddAction",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    },
+    "Action": {
+      "": {
+        "name": "",
+        "description": "When the Action was performed: start time. This is for actions that span a period of time. e.g. John wrote a book from *January* to December.",
+        "type": "DateTime"
+      }
+    },
+    "UpdateAction": {
+      "": {
+        "name": "",
+        "description": "A sub property of object. The collection target of the action.",
+        "type": "Thing"
+      }
+    }
+  }
+}

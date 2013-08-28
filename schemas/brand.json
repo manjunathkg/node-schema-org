@@ -1,0 +1,20 @@
+{
+  "type": "Brand",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "URL of an image for the logo of the item.",
+      "type": "ImageObject"
+    }
+  }
+}

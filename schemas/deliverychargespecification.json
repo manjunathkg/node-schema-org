@@ -1,0 +1,27 @@
+{
+  "type": "DeliveryChargeSpecification",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    },
+    "PriceSpecification": {
+      "": {
+        "name": "",
+        "description": "Specifies whether the applicable value-added tax (VAT) is included in the price specification or not.",
+        "type": "Boolean"
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.",
+      "type": "GeoShape"
+    }
+  }
+}

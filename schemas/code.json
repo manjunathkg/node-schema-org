@@ -1,0 +1,27 @@
+{
+  "type": "Code",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    },
+    "CreativeWork": {
+      "": {
+        "name": "",
+        "description": "An embedded video object.",
+        "type": "VideoObject"
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "Target Operating System / Product to which the code applies.  If applies to several versions, just the product name can be used.",
+      "type": "SoftwareApplication"
+    }
+  }
+}

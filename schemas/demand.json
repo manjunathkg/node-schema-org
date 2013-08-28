@@ -1,0 +1,20 @@
+{
+  "type": "Demand",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "The warranty promise(s) included in the offer.",
+      "type": "WarrantyPromise"
+    }
+  }
+}

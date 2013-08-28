@@ -1,0 +1,27 @@
+{
+  "type": "MaximumDoseSchedule",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    },
+    "MedicalEntity": {
+      "": {
+        "name": "",
+        "description": "A medical study or trial related to this entity.",
+        "type": "MedicalStudy"
+      }
+    },
+    "DoseSchedule": {
+      "": {
+        "name": "",
+        "description": "Characteristics of the population for which this is intended, or which typically uses it, e.g. 'adults'.",
+        "type": "Text"
+      }
+    }
+  }
+}

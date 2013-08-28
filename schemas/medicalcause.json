@@ -1,0 +1,27 @@
+{
+  "type": "MedicalCause",
+  "version": "Schema Version 1.0c",
+  "bases": {
+    "Thing": {
+      "": {
+        "name": "",
+        "description": "URL of the item.",
+        "type": "URL"
+      }
+    },
+    "MedicalEntity": {
+      "": {
+        "name": "",
+        "description": "A medical study or trial related to this entity.",
+        "type": "MedicalStudy"
+      }
+    }
+  },
+  "properties": {
+    "": {
+      "name": "",
+      "description": "The condition, complication, symptom, sign, etc. caused.",
+      "type": "MedicalEntity"
+    }
+  }
+}
