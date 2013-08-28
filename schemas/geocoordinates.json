@@ -3,16 +3,51 @@
   "version": "Schema Version 1.0c",
   "bases": {
     "Thing": {
-      "": {
-        "name": "",
+      "additionalType": {
+        "name": "additionalType",
+        "description": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.",
+        "type": "URL"
+      },
+      "description": {
+        "name": "description",
+        "description": "A short description of the item.",
+        "type": "Text"
+      },
+      "image": {
+        "name": "image",
+        "description": "URL of an image of the item.",
+        "type": "URL"
+      },
+      "name": {
+        "name": "name",
+        "description": "The name of the item.",
+        "type": "Text"
+      },
+      "sameAs": {
+        "name": "sameAs",
+        "description": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Freebase page, or official website.",
+        "type": "URL"
+      },
+      "url": {
+        "name": "url",
         "description": "URL of the item.",
         "type": "URL"
       }
     }
   },
   "properties": {
-    "": {
-      "name": "",
+    "elevation": {
+      "name": "elevation",
+      "description": "The elevation of a location.",
+      "type": "NumberorText"
+    },
+    "latitude": {
+      "name": "latitude",
+      "description": "The latitude of a location. For example 37.42242.",
+      "type": "NumberorText"
+    },
+    "longitude": {
+      "name": "longitude",
       "description": "The longitude of a location. For example -122.08585.",
       "type": "NumberorText"
     }
