@@ -1,72 +1,181 @@
 {
-  "type": "ParentAudience",
+  "type": "object",
   "version": "Schema Version 1.0c",
-  "bases": {
-    "Thing": {
-      "additionalType": {
-        "name": "additionalType",
-        "description": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.",
-        "type": "URL"
-      },
-      "description": {
-        "name": "description",
-        "description": "A short description of the item.",
-        "type": "Text"
-      },
-      "image": {
-        "name": "image",
-        "description": "URL of an image of the item.",
-        "type": "URL"
-      },
-      "name": {
-        "name": "name",
-        "description": "The name of the item.",
-        "type": "Text"
-      },
-      "sameAs": {
-        "name": "sameAs",
-        "description": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Freebase page, or official website.",
-        "type": "URL"
-      },
-      "url": {
-        "name": "url",
-        "description": "URL of the item.",
-        "type": "URL"
-      }
-    },
-    "PeopleAudience": {
-      "healthCondition": {
-        "name": "healthCondition",
-        "description": "Expectations for health conditions of target audience",
-        "type": "MedicalCondition"
-      },
-      "suggestedGender": {
-        "name": "suggestedGender",
-        "description": "The gender of the person or audience.",
-        "type": "Text"
-      },
-      "suggestedMaxAge": {
-        "name": "suggestedMaxAge",
-        "description": "Maximal age recommended for viewing content",
-        "type": "Number"
-      },
-      "suggestedMinAge": {
-        "name": "suggestedMinAge",
-        "description": "Minimal age recommended for viewing content",
-        "type": "Number"
-      }
-    }
-  },
   "properties": {
-    "childMaxAge": {
-      "name": "childMaxAge",
-      "description": "Maximal age of the child",
-      "type": "Number"
-    },
-    "childMinAge": {
-      "name": "childMinAge",
-      "description": "Minimal age of the child",
-      "type": "Number"
+    "bases": {
+      "type": "object",
+      "properties": {
+        "Thing": {
+          "type": "object",
+          "properties": {
+            "additionalType": {
+              "name": "additionalType",
+              "description": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "URL"
+                  }
+                }
+              }
+            },
+            "description": {
+              "name": "description",
+              "description": "A short description of the item.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "Text"
+                  }
+                }
+              }
+            },
+            "image": {
+              "name": "image",
+              "description": "URL of an image of the item.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "URL"
+                  }
+                }
+              }
+            },
+            "name": {
+              "name": "name",
+              "description": "The name of the item.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "Text"
+                  }
+                }
+              }
+            },
+            "sameAs": {
+              "name": "sameAs",
+              "description": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Freebase page, or official website.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "URL"
+                  }
+                }
+              }
+            },
+            "url": {
+              "name": "url",
+              "description": "URL of the item.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "URL"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "PeopleAudience": {
+          "type": "object",
+          "properties": {
+            "healthCondition": {
+              "name": "healthCondition",
+              "description": "Expectations for health conditions of target audience",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "MedicalCondition"
+                  }
+                }
+              }
+            },
+            "suggestedGender": {
+              "name": "suggestedGender",
+              "description": "The gender of the person or audience.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "Text"
+                  }
+                }
+              }
+            },
+            "suggestedMaxAge": {
+              "name": "suggestedMaxAge",
+              "description": "Maximal age recommended for viewing content",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "Number"
+                  }
+                }
+              }
+            },
+            "suggestedMinAge": {
+              "name": "suggestedMinAge",
+              "description": "Minimal age recommended for viewing content",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "Number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

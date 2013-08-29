@@ -1,101 +1,313 @@
 {
-  "type": "PsychologicalTreatment",
+  "type": "object",
   "version": "Schema Version 1.0c",
-  "bases": {
-    "Thing": {
-      "additionalType": {
-        "name": "additionalType",
-        "description": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.",
-        "type": "URL"
-      },
-      "description": {
-        "name": "description",
-        "description": "A short description of the item.",
-        "type": "Text"
-      },
-      "image": {
-        "name": "image",
-        "description": "URL of an image of the item.",
-        "type": "URL"
-      },
-      "name": {
-        "name": "name",
-        "description": "The name of the item.",
-        "type": "Text"
-      },
-      "sameAs": {
-        "name": "sameAs",
-        "description": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Freebase page, or official website.",
-        "type": "URL"
-      },
-      "url": {
-        "name": "url",
-        "description": "URL of the item.",
-        "type": "URL"
-      }
-    },
-    "MedicalEntity": {
-      "alternateName": {
-        "name": "alternateName",
-        "description": "Any alternate name for this medical entity.",
-        "type": "Text"
-      },
-      "code": {
-        "name": "code",
-        "description": "A medical code for the entity, taken from a controlled vocabulary or ontology such as ICD-9, DiseasesDB, MeSH, SNOMED-CT, RxNorm, etc.",
-        "type": "MedicalCode"
-      },
-      "guideline": {
-        "name": "guideline",
-        "description": "A medical guideline related to this entity.",
-        "type": "MedicalGuideline"
-      },
-      "medicineSystem": {
-        "name": "medicineSystem",
-        "description": "The system of medicine that includes this MedicalEntity, for example 'evidence-based', 'homeopathic', 'chiropractic', etc.",
-        "type": "MedicineSystem"
-      },
-      "recognizingAuthority": {
-        "name": "recognizingAuthority",
-        "description": "If applicable, the organization that officially recognizes this entity as part of its endorsed system of medicine.",
-        "type": "Organization"
-      },
-      "relevantSpecialty": {
-        "name": "relevantSpecialty",
-        "description": "If applicable, a medical specialty in which this entity is relevant.",
-        "type": "MedicalSpecialty"
-      },
-      "study": {
-        "name": "study",
-        "description": "A medical study or trial related to this entity.",
-        "type": "MedicalStudy"
-      }
-    },
-    "MedicalTherapy": {
-      "adverseOutcome": {
-        "name": "adverseOutcome",
-        "description": "A possible complication and/or side effect of this therapy. If it is known that an adverse outcome is serious (resulting in death, disability, or permanent damage; requiring hospitalization; or is otherwise life-threatening or requires immediate medical attention), tag it as a seriouseAdverseOutcome instead.",
-        "type": "MedicalEntity"
-      },
-      "contraindication": {
-        "name": "contraindication",
-        "description": "A contraindication for this therapy.",
-        "type": "MedicalContraindication"
-      },
-      "duplicateTherapy": {
-        "name": "duplicateTherapy",
-        "description": "A therapy that duplicates or overlaps this one.",
-        "type": "MedicalTherapy"
-      },
-      "indication": {
-        "name": "indication",
-        "description": "A factor that indicates use of this therapy for treatment and/or prevention of a condition, symptom, etc. For therapies such as drugs, indications can include both officially-approved indications as well as off-label uses. These can be distinguished by using the ApprovedIndication subtype of MedicalIndication.",
-        "type": "MedicalIndication"
-      },
-      "seriousAdverseOutcome": {
-        "name": "seriousAdverseOutcome",
-        "description": "A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.",
-        "type": "MedicalEntity"
+  "properties": {
+    "bases": {
+      "type": "object",
+      "properties": {
+        "Thing": {
+          "type": "object",
+          "properties": {
+            "additionalType": {
+              "name": "additionalType",
+              "description": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "URL"
+                  }
+                }
+              }
+            },
+            "description": {
+              "name": "description",
+              "description": "A short description of the item.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "Text"
+                  }
+                }
+              }
+            },
+            "image": {
+              "name": "image",
+              "description": "URL of an image of the item.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "URL"
+                  }
+                }
+              }
+            },
+            "name": {
+              "name": "name",
+              "description": "The name of the item.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "Text"
+                  }
+                }
+              }
+            },
+            "sameAs": {
+              "name": "sameAs",
+              "description": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Freebase page, or official website.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "URL"
+                  }
+                }
+              }
+            },
+            "url": {
+              "name": "url",
+              "description": "URL of the item.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "URL"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "MedicalEntity": {
+          "type": "object",
+          "properties": {
+            "alternateName": {
+              "name": "alternateName",
+              "description": "Any alternate name for this medical entity.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "Text"
+                  }
+                }
+              }
+            },
+            "code": {
+              "name": "code",
+              "description": "A medical code for the entity, taken from a controlled vocabulary or ontology such as ICD-9, DiseasesDB, MeSH, SNOMED-CT, RxNorm, etc.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "MedicalCode"
+                  }
+                }
+              }
+            },
+            "guideline": {
+              "name": "guideline",
+              "description": "A medical guideline related to this entity.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "MedicalGuideline"
+                  }
+                }
+              }
+            },
+            "medicineSystem": {
+              "name": "medicineSystem",
+              "description": "The system of medicine that includes this MedicalEntity, for example 'evidence-based', 'homeopathic', 'chiropractic', etc.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "MedicineSystem"
+                  }
+                }
+              }
+            },
+            "recognizingAuthority": {
+              "name": "recognizingAuthority",
+              "description": "If applicable, the organization that officially recognizes this entity as part of its endorsed system of medicine.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "Organization"
+                  }
+                }
+              }
+            },
+            "relevantSpecialty": {
+              "name": "relevantSpecialty",
+              "description": "If applicable, a medical specialty in which this entity is relevant.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "MedicalSpecialty"
+                  }
+                }
+              }
+            },
+            "study": {
+              "name": "study",
+              "description": "A medical study or trial related to this entity.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "MedicalStudy"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "MedicalTherapy": {
+          "type": "object",
+          "properties": {
+            "adverseOutcome": {
+              "name": "adverseOutcome",
+              "description": "A possible complication and/or side effect of this therapy. If it is known that an adverse outcome is serious (resulting in death, disability, or permanent damage; requiring hospitalization; or is otherwise life-threatening or requires immediate medical attention), tag it as a seriouseAdverseOutcome instead.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "MedicalEntity"
+                  }
+                }
+              }
+            },
+            "contraindication": {
+              "name": "contraindication",
+              "description": "A contraindication for this therapy.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "MedicalContraindication"
+                  }
+                }
+              }
+            },
+            "duplicateTherapy": {
+              "name": "duplicateTherapy",
+              "description": "A therapy that duplicates or overlaps this one.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "MedicalTherapy"
+                  }
+                }
+              }
+            },
+            "indication": {
+              "name": "indication",
+              "description": "A factor that indicates use of this therapy for treatment and/or prevention of a condition, symptom, etc. For therapies such as drugs, indications can include both officially-approved indications as well as off-label uses. These can be distinguished by using the ApprovedIndication subtype of MedicalIndication.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "MedicalIndication"
+                  }
+                }
+              }
+            },
+            "seriousAdverseOutcome": {
+              "name": "seriousAdverseOutcome",
+              "description": "A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.",
+              "type": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "ResourceType": {
+                    "type": "string",
+                    "default": "MedicalEntity"
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

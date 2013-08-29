@@ -1,4 +1,10 @@
 {
-  "type": "Boolean",
-  "version": "Schema Version 1.0c"
+  "type": "object",
+  "version": "Schema Version 1.0c",
+  "properties": {
+    "bases": {
+      "type": "object",
+      "properties": {}
+    }
+  }
 }
