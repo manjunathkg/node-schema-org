@@ -23,6 +23,9 @@ var argv = optimist.options({
   schemaDir: {
     description: 'Directory to place schemas in'
   },
+  resourcesDir: {
+    description: 'Directory to place generated resources in'
+  },
   url: {
     description: 'Remote URL to parse schemas from'
   },
@@ -56,6 +59,7 @@ if (argv.h || argv.help) {
 schemaOrg.logger.cli();
 
 var schemaDir    = argv.schemaDir || path.join(__dirname, '..', 'schemas'),
+    resourcesDir = argv.resourcesDir || path.join(__dirname, '..', 'resources'),
     allSchemas   = path.join(schemaDir, 'schema-list.json'),
     downloadList = false;
 
@@ -120,6 +124,30 @@ function removeLocalSchemas (done) {
   });
 }
 
+
+function removeLocalResources (done) {
+  winston.warn('Removing all resources in ' + resourcesDir.magenta);
+  fs.readdir(resourcesDir, function (err, files) {
+    if (err) {
+      return done(err);
+    }
+    
+    // files = files.filter(function (file) {
+    //   return file !== 'schema-list.json'
+    // });
+    
+    function removeFile (file, next) {
+      schemaOrg.logger.info('Removing old file: ' + file);
+      fs.unlink(path.join(resourcesDir, file), next);
+    }
+    
+    async.forEach(files, removeFile, done);
+  });
+}
+
+
+
+
 function parseAllSchemas (schemas) {
 
   if (argv._.length) {
@@ -178,6 +206,13 @@ readLocal(function (err, schemas) {
       // Ignore errors.
       //
     }
+
+
+    removeLocalResources(function(err){
+      if(err){
+        console.log("ERROR removing resource! " + err);
+      }
+    })
     
     if (downloadList) {
       return streamChild([path.join(__dirname, 'list-schemas')], function () {

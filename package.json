@@ -19,6 +19,8 @@
     "pkginfo": "0.2.x",
     "request": "2.x.x",
     "winston": "~0.6.2",
+    "underscore" : "*",
+    "underscore.string" : "*",
     "validator": "0.4.x"
   },
   "bin": {
