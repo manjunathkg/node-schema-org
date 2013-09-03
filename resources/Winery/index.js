@@ -9,7 +9,7 @@ Winery.persist('fs');
 
 Winery.property('additionalType', {
   "name" : "additionalType", 
-  "description" : "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
+  "description" : "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the &#x27;typeof&#x27; attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
 "type":  "string" 
 }); 
 
@@ -37,7 +37,7 @@ Winery.property('name', {
 
 Winery.property('sameAs', {
   "name" : "sameAs", 
-  "description" : "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Freebase page, or official website.", 
+  "description" : "URL of a reference Web page that unambiguously indicates the item&#x27;s identity. E.g. the URL of the item&#x27;s Wikipedia page, Freebase page, or official website.", 
 "type":  "string" 
 }); 
 
@@ -55,35 +55,35 @@ exports.Winery = Winery;
 Winery.property('address', {
   "name" : "address", 
   "description" : "Physical address of the item.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "PostalAddress" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "PostalAddress" } }  
 }); 
 
 
 Winery.property('aggregateRating', {
   "name" : "aggregateRating", 
   "description" : "The overall rating, based on a collection of reviews or ratings, of the item.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "AggregateRating" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "AggregateRating" } }  
 }); 
 
 
 Winery.property('containedIn', {
   "name" : "containedIn", 
   "description" : "The basic containment relation between places.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Place" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Place" } }  
 }); 
 
 
 Winery.property('event', {
   "name" : "event", 
   "description" : "Upcoming or past event associated with this place or organization.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Event" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Event" } }  
 }); 
 
 
 Winery.property('events', {
   "name" : "events", 
   "description" : "Upcoming or past events associated with this place or organization (legacy spelling; see singular form, event).", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Event" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Event" } }  
 }); 
 
 
@@ -97,7 +97,7 @@ Winery.property('faxNumber', {
 Winery.property('geo', {
   "name" : "geo", 
   "description" : "The geo coordinates of the place.", 
-"type":"object","properties" : {"GeoCoordinates" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "GeoCoordinates" }}},"GeoShape" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "GeoShape" }}}} 
+"type":"object","properties" : {"GeoCoordinates" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "GeoCoordinates" }}},"GeoShape" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "GeoShape" }}}} 
 }); 
 
 
@@ -125,7 +125,7 @@ Winery.property('isicV4', {
 Winery.property('logo', {
   "name" : "logo", 
   "description" : "URL of an image for the logo of the item.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "ImageObject" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "ImageObject" } }  
 }); 
 
 
@@ -146,35 +146,35 @@ Winery.property('maps', {
 Winery.property('openingHoursSpecification', {
   "name" : "openingHoursSpecification", 
   "description" : "The opening hours of a certain place.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "OpeningHoursSpecification" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "OpeningHoursSpecification" } }  
 }); 
 
 
 Winery.property('photo', {
   "name" : "photo", 
   "description" : "A photograph of this place.", 
-"type":"object","properties" : {"ImageObject" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "ImageObject" }}},"Photograph" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Photograph" }}}} 
+"type":"object","properties" : {"ImageObject" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "ImageObject" }}},"Photograph" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Photograph" }}}} 
 }); 
 
 
 Winery.property('photos', {
   "name" : "photos", 
   "description" : "Photographs of this place (legacy spelling; see singular form, photo).", 
-"type":"object","properties" : {"ImageObject" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "ImageObject" }}},"Photograph" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Photograph" }}}} 
+"type":"object","properties" : {"ImageObject" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "ImageObject" }}},"Photograph" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Photograph" }}}} 
 }); 
 
 
 Winery.property('review', {
   "name" : "review", 
   "description" : "A review of the item.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Review" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Review" } }  
 }); 
 
 
 Winery.property('reviews', {
   "name" : "reviews", 
   "description" : "Review of the item (legacy spelling; see singular form, review).", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Review" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Review" } }  
 }); 
 
 
@@ -191,27 +191,27 @@ exports.Winery = Winery;
 Winery.property('brand', {
   "name" : "brand", 
   "description" : "The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.", 
-"type":"object","properties" : {"Brand" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Brand" }}},"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Organization" }}}} 
+"type":"object","properties" : {"Brand" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Brand" }}},"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Organization" }}}} 
 }); 
 
 
 Winery.property('contactPoint', {
   "name" : "contactPoint", 
   "description" : "A contact point for a person or organization.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "ContactPoint" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "ContactPoint" } }  
 }); 
 
 
 Winery.property('contactPoints', {
   "name" : "contactPoints", 
   "description" : "A contact point for a person or organization (legacy spelling; see singular form, contactPoint).", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "ContactPoint" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "ContactPoint" } }  
 }); 
 
 
 Winery.property('duns', {
   "name" : "duns", 
-  "description" : "The Dun & Bradstreet DUNS number for identifying an organization or business person.", 
+  "description" : "The Dun &amp; Bradstreet DUNS number for identifying an organization or business person.", 
 "type":  "string" 
 }); 
 
@@ -226,28 +226,28 @@ Winery.property('email', {
 Winery.property('employee', {
   "name" : "employee", 
   "description" : "Someone working for this organization.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Person" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Person" } }  
 }); 
 
 
 Winery.property('employees', {
   "name" : "employees", 
   "description" : "People working for this organization. (legacy spelling; see singular form, employee)", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Person" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Person" } }  
 }); 
 
 
 Winery.property('founder', {
   "name" : "founder", 
   "description" : "A person who founded this organization.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Person" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Person" } }  
 }); 
 
 
 Winery.property('founders', {
   "name" : "founders", 
   "description" : "A person who founded this organization (legacy spelling; see singular form, founder).", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Person" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Person" } }  
 }); 
 
 
@@ -261,7 +261,7 @@ Winery.property('foundingDate', {
 Winery.property('hasPOS', {
   "name" : "hasPOS", 
   "description" : "Points-of-Sales operated by the organization or person.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Place" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Place" } }  
 }); 
 
 
@@ -275,28 +275,28 @@ Winery.property('legalName', {
 Winery.property('location', {
   "name" : "location", 
   "description" : "The location of the event, organization or action.", 
-"type":"object","properties" : {"Place" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Place" }}},"PostalAddress" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "PostalAddress" }}}} 
+"type":"object","properties" : {"Place" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Place" }}},"PostalAddress" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "PostalAddress" }}}} 
 }); 
 
 
 Winery.property('makesOffer', {
   "name" : "makesOffer", 
   "description" : "A pointer to products or services offered by the organization or person.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Offer" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Offer" } }  
 }); 
 
 
 Winery.property('member', {
   "name" : "member", 
   "description" : "A member of this organization.", 
-"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Organization" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Person" }}}} 
+"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Organization" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Person" }}}} 
 }); 
 
 
 Winery.property('members', {
   "name" : "members", 
   "description" : "A member of this organization (legacy spelling; see singular form, member).", 
-"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Organization" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Person" }}}} 
+"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Organization" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Person" }}}} 
 }); 
 
 
@@ -310,20 +310,20 @@ Winery.property('naics', {
 Winery.property('owns', {
   "name" : "owns", 
   "description" : "Products owned by the organization or person.", 
-"type":"object","properties" : {"OwnershipInfo" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "OwnershipInfo" }}},"Product" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Product" }}}} 
+"type":"object","properties" : {"OwnershipInfo" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "OwnershipInfo" }}},"Product" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Product" }}}} 
 }); 
 
 
 Winery.property('seeks', {
   "name" : "seeks", 
   "description" : "A pointer to products or services sought by the organization or person (demand).", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Demand" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Demand" } }  
 }); 
 
 
 Winery.property('taxID', {
   "name" : "taxID", 
-  "description" : "The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.", 
+  "description" : "The Tax &#x2F; Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF&#x2F;NIF in Spain.", 
 "type":  "string" 
 }); 
 
@@ -341,7 +341,7 @@ exports.Winery = Winery;
 Winery.property('branchOf', {
   "name" : "branchOf", 
   "description" : "The larger organization that this local business is a branch of, if any.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Organization" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Organization" } }  
 }); 
 
 
@@ -354,8 +354,8 @@ Winery.property('currenciesAccepted', {
 
 Winery.property('openingHours', {
   "name" : "openingHours", 
-  "description" : "The opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'.- Days are specified using the following two-letter combinations: Mo, Tu, We, Th, Fr, Sa, Su.- Times are specified using 24:00 time. For example, 3pm is specified as 15:00. - Here is an example: Tuesdays and Thursdays 4-8pm. - If a business is open 7 days a week, then it can be specified as Monday through Sunday, all day.", 
-undefined 
+  "description" : "The opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas &#x27;,&#x27; separating each day. Day or time ranges are specified using a hyphen &#x27;-&#x27;.- Days are specified using the following two-letter combinations: Mo, Tu, We, Th, Fr, Sa, Su.- Times are specified using 24:00 time. For example, 3pm is specified as 15:00. - Here is an example: Tuesdays and Thursdays 4-8pm. - If a business is open 7 days a week, then it can be specified as Monday through Sunday, all day.", 
+ "type":"object", "properties" : { "id":{"type" : "array"},"ResourceType" :{"type" : "string", "default" :"Duration" } }  
 }); 
 
 
@@ -378,15 +378,15 @@ exports.Winery = Winery;
 
 Winery.property('acceptsReservations', {
   "name" : "acceptsReservations", 
-  "description" : "Either Yes/No, or a URL at which reservations can be made.", 
-undefined 
+  "description" : "Either Yes&#x2F;No, or a URL at which reservations can be made.", 
+ "type":"object", "properties" : { "id":{"type" : "array"},"ResourceType" :{"type" : "string", "default" :"TextorURL" } }  
 }); 
 
 
 Winery.property('menu', {
   "name" : "menu", 
   "description" : "Either the actual menu or a URL of the menu.", 
-undefined 
+ "type":"object", "properties" : { "id":{"type" : "array"},"ResourceType" :{"type" : "string", "default" :"TextorURL" } }  
 }); 
 
 

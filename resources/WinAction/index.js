@@ -9,7 +9,7 @@ WinAction.persist('fs');
 
 WinAction.property('additionalType', {
   "name" : "additionalType", 
-  "description" : "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
+  "description" : "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the &#x27;typeof&#x27; attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
 "type":  "string" 
 }); 
 
@@ -37,7 +37,7 @@ WinAction.property('name', {
 
 WinAction.property('sameAs', {
   "name" : "sameAs", 
-  "description" : "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Freebase page, or official website.", 
+  "description" : "URL of a reference Web page that unambiguously indicates the item&#x27;s identity. E.g. the URL of the item&#x27;s Wikipedia page, Freebase page, or official website.", 
 "type":  "string" 
 }); 
 
@@ -55,7 +55,7 @@ exports.WinAction = WinAction;
 WinAction.property('agent', {
   "name" : "agent", 
   "description" : "The direct performer or driver of the action (animate or inanimate). e.g. *John* wrote a book.", 
-"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Organization" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Person" }}}} 
+"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Organization" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Person" }}}} 
 }); 
 
 
@@ -69,35 +69,35 @@ WinAction.property('endTime', {
 WinAction.property('instrument', {
   "name" : "instrument", 
   "description" : "The object that helped the agent perform the action. e.g. John wrote a book with *a pen*.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Thing" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Thing" } }  
 }); 
 
 
 WinAction.property('location', {
   "name" : "location", 
   "description" : "The location of the event, organization or action.", 
-"type":"object","properties" : {"Place" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Place" }}},"PostalAddress" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "PostalAddress" }}}} 
+"type":"object","properties" : {"Place" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Place" }}},"PostalAddress" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "PostalAddress" }}}} 
 }); 
 
 
 WinAction.property('object', {
   "name" : "object", 
-  "description" : "The object upon the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn't). e.g. John read *a book*.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Thing" } }  
+  "description" : "The object upon the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn&#x27;t). e.g. John read *a book*.", 
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Thing" } }  
 }); 
 
 
 WinAction.property('participant', {
   "name" : "participant", 
   "description" : "Other co-agents that participated in the action indirectly. e.g. John wrote a book with *Steve*.", 
-"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Organization" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "string" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Person" }}}} 
+"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Organization" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Person" }}}} 
 }); 
 
 
 WinAction.property('result', {
   "name" : "result", 
   "description" : "The result produced in the action. e.g. John wrote *a book*.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Thing" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Thing" } }  
 }); 
 
 
@@ -114,7 +114,7 @@ exports.WinAction = WinAction;
 WinAction.property('loser', {
   "name" : "loser", 
   "description" : "A sub property of participant. The loser of the action.", 
- "type":"object",  "properties" : {           "id":{"type" : "string"},           "ResourceType" :{"type" : "string", "default" : "Person" } }  
+ "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Person" } }  
 }); 
 
 
