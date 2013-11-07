@@ -15,11 +15,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -31,11 +27,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -47,11 +39,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -63,11 +51,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -79,11 +63,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -95,11 +75,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -115,12 +91,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "PostalAddress"
+                  "PostalAddress": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -131,12 +108,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "AggregateRating"
+                  "AggregateRating": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -151,11 +129,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Brand"
+                        "type": "Array"
                       }
                     }
                   },
@@ -163,11 +137,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Organization"
+                        "type": "Array"
                       }
                     }
                   }
@@ -180,12 +150,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "ContactPoint"
+                  "ContactPoint": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -196,12 +167,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "ContactPoint"
+                  "ContactPoint": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -213,11 +185,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -229,11 +197,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -244,12 +208,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Person"
+                  "Person": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -260,12 +225,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Person"
+                  "Person": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -276,12 +242,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Event"
+                  "Event": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -292,12 +259,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Event"
+                  "Event": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -309,11 +277,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -324,12 +288,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Person"
+                  "Person": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -340,12 +305,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Person"
+                  "Person": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -357,11 +323,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Date"
+                    "type": "Date"
                   }
                 }
               }
@@ -373,11 +335,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -388,12 +346,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Place"
+                  "Place": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -405,11 +364,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -421,11 +376,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -437,11 +388,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -456,11 +403,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Place"
+                        "type": "Array"
                       }
                     }
                   },
@@ -468,11 +411,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "PostalAddress"
+                        "type": "Array"
                       }
                     }
                   }
@@ -485,12 +424,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "ImageObject"
+                  "ImageObject": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -501,12 +441,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Offer"
+                  "Offer": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -521,11 +462,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Organization"
+                        "type": "Array"
                       }
                     }
                   },
@@ -533,11 +470,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Person"
+                        "type": "Array"
                       }
                     }
                   }
@@ -554,11 +487,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Organization"
+                        "type": "Array"
                       }
                     }
                   },
@@ -566,11 +495,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Person"
+                        "type": "Array"
                       }
                     }
                   }
@@ -584,11 +509,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -603,11 +524,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "OwnershipInfo"
+                        "type": "Array"
                       }
                     }
                   },
@@ -615,11 +532,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Product"
+                        "type": "Array"
                       }
                     }
                   }
@@ -632,12 +545,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Review"
+                  "Review": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -648,12 +562,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Review"
+                  "Review": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -664,12 +579,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Demand"
+                  "Demand": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -681,11 +597,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -697,11 +609,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -713,11 +621,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -733,12 +637,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Person"
+                  "Person": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }

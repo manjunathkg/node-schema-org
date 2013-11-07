@@ -9,6 +9,7 @@ AboutPage.persist('fs');
 
 AboutPage.property('additionalType', {
   "name" : "additionalType", 
+  "displayName" : "Additional Type", 
   "description" : "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the &#x27;typeof&#x27; attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
 "type":  "string" 
 }); 
@@ -16,6 +17,7 @@ AboutPage.property('additionalType', {
 
 AboutPage.property('description', {
   "name" : "description", 
+  "displayName" : "Description", 
   "description" : "A short description of the item.", 
 "type":  "string" 
 }); 
@@ -23,6 +25,7 @@ AboutPage.property('description', {
 
 AboutPage.property('image', {
   "name" : "image", 
+  "displayName" : "Image", 
   "description" : "URL of an image of the item.", 
 "type":  "string" 
 }); 
@@ -30,6 +33,7 @@ AboutPage.property('image', {
 
 AboutPage.property('name', {
   "name" : "name", 
+  "displayName" : "Name", 
   "description" : "The name of the item.", 
 "type":  "string" 
 }); 
@@ -37,6 +41,7 @@ AboutPage.property('name', {
 
 AboutPage.property('sameAs', {
   "name" : "sameAs", 
+  "displayName" : "Same as", 
   "description" : "URL of a reference Web page that unambiguously indicates the item&#x27;s identity. E.g. the URL of the item&#x27;s Wikipedia page, Freebase page, or official website.", 
 "type":  "string" 
 }); 
@@ -44,6 +49,7 @@ AboutPage.property('sameAs', {
 
 AboutPage.property('url', {
   "name" : "url", 
+  "displayName" : "Url", 
   "description" : "URL of the item.", 
 "type":  "string" 
 }); 
@@ -54,27 +60,31 @@ exports.AboutPage = AboutPage;
 
 AboutPage.property('about', {
   "name" : "about", 
+  "displayName" : "About", 
   "description" : "The subject matter of the content.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Thing" } }  
+"type":"object","properties" : {"Thing" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('accountablePerson', {
   "name" : "accountablePerson", 
+  "displayName" : "Accountable Person", 
   "description" : "Specifies the Person that is legally accountable for the CreativeWork.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Person" } }  
+"type":"object","properties" : {"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('aggregateRating', {
   "name" : "aggregateRating", 
+  "displayName" : "Aggregate Rating", 
   "description" : "The overall rating, based on a collection of reviews or ratings, of the item.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "AggregateRating" } }  
+"type":"object","properties" : {"AggregateRating" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('alternativeHeadline', {
   "name" : "alternativeHeadline", 
+  "displayName" : "Alternative Headline", 
   "description" : "A secondary title of the CreativeWork.", 
 "type":  "string" 
 }); 
@@ -82,34 +92,39 @@ AboutPage.property('alternativeHeadline', {
 
 AboutPage.property('associatedMedia', {
   "name" : "associatedMedia", 
+  "displayName" : "Associated Media", 
   "description" : "The media objects that encode this creative work. This property is a synonym for encodings.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "MediaObject" } }  
+"type":"object","properties" : {"MediaObject" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('audience', {
   "name" : "audience", 
+  "displayName" : "Audience", 
   "description" : "The intended audience of the item, i.e. the group for whom the item was created.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Audience" } }  
+"type":"object","properties" : {"Audience" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('audio', {
   "name" : "audio", 
+  "displayName" : "Audio", 
   "description" : "An embedded audio object.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "AudioObject" } }  
+"type":"object","properties" : {"AudioObject" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('author', {
   "name" : "author", 
+  "displayName" : "Author", 
   "description" : "The author of this content. Please note that author is special in that HTML 5 provides a special mechanism for indicating authorship via the rel tag. That is equivalent to this and may be used interchangeably.", 
-"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Organization" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Person" }}}} 
+"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('award', {
   "name" : "award", 
+  "displayName" : "Award", 
   "description" : "An award won by this person or for this creative work.", 
 "type":  "string" 
 }); 
@@ -117,6 +132,7 @@ AboutPage.property('award', {
 
 AboutPage.property('awards', {
   "name" : "awards", 
+  "displayName" : "Awards", 
   "description" : "Awards won by this person or for this creative work. (legacy spelling; see singular form, award)", 
 "type":  "string" 
 }); 
@@ -124,27 +140,31 @@ AboutPage.property('awards', {
 
 AboutPage.property('citation', {
   "name" : "citation", 
+  "displayName" : "Citation", 
   "description" : "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc. NOTE: Candidate for promotion to ScholarlyArticle.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "CreativeWork" } }  
+"type":"object","properties" : {"CreativeWork" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('comment', {
   "name" : "comment", 
+  "displayName" : "Comment", 
   "description" : "Comments, typically from users, on this CreativeWork.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "UserComments" } }  
+"type":"object","properties" : {"UserComments" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('contentLocation', {
   "name" : "contentLocation", 
+  "displayName" : "Content Location", 
   "description" : "The location of the content.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Place" } }  
+"type":"object","properties" : {"Place" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('contentRating', {
   "name" : "contentRating", 
+  "displayName" : "Content Rating", 
   "description" : "Official rating of a piece of content—for example,&#x27;MPAA PG-13&#x27;.", 
 "type":  "string" 
 }); 
@@ -152,20 +172,23 @@ AboutPage.property('contentRating', {
 
 AboutPage.property('contributor', {
   "name" : "contributor", 
+  "displayName" : "Contributor", 
   "description" : "A secondary contributor to the CreativeWork.", 
-"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Organization" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Person" }}}} 
+"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('copyrightHolder', {
   "name" : "copyrightHolder", 
+  "displayName" : "Copyright Holder", 
   "description" : "The party holding the legal copyright to the CreativeWork.", 
-"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Organization" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Person" }}}} 
+"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('copyrightYear', {
   "name" : "copyrightYear", 
+  "displayName" : "Copyright Year", 
   "description" : "The year during which the claimed copyright for the CreativeWork was first asserted.", 
 "type":  "number" 
 }); 
@@ -173,34 +196,39 @@ AboutPage.property('copyrightYear', {
 
 AboutPage.property('creator', {
   "name" : "creator", 
-  "description" : "The creator&#x2F;author of this CreativeWork or UserComments. This is the same as the Author property for CreativeWork.", 
-"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Organization" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Person" }}}} 
+  "displayName" : "Creator", 
+  "description" : "The creator/author of this CreativeWork or UserComments. This is the same as the Author property for CreativeWork.", 
+"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('dateCreated', {
   "name" : "dateCreated", 
+  "displayName" : "Date Created", 
   "description" : "The date on which the CreativeWork was created.", 
-"type":  "string" 
+"type":  "date" 
 }); 
 
 
 AboutPage.property('dateModified', {
   "name" : "dateModified", 
+  "displayName" : "Date Modified", 
   "description" : "The date on which the CreativeWork was most recently modified.", 
-"type":  "string" 
+"type":  "date" 
 }); 
 
 
 AboutPage.property('datePublished', {
   "name" : "datePublished", 
-  "description" : "Date of first broadcast&#x2F;publication.", 
-"type":  "string" 
+  "displayName" : "Date Published", 
+  "description" : "Date of first broadcast/publication.", 
+"type":  "date" 
 }); 
 
 
 AboutPage.property('discussionUrl', {
   "name" : "discussionUrl", 
+  "displayName" : "Discussion Url", 
   "description" : "A link to the page containing the comments of the CreativeWork.", 
 "type":  "string" 
 }); 
@@ -208,20 +236,23 @@ AboutPage.property('discussionUrl', {
 
 AboutPage.property('editor', {
   "name" : "editor", 
+  "displayName" : "Editor", 
   "description" : "Specifies the Person who edited the CreativeWork.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Person" } }  
+"type":"object","properties" : {"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('educationalAlignment', {
   "name" : "educationalAlignment", 
+  "displayName" : "Educational Alignment", 
   "description" : "An alignment to an established educational framework.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "AlignmentObject" } }  
+"type":"object","properties" : {"AlignmentObject" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('educationalUse', {
   "name" : "educationalUse", 
+  "displayName" : "Educational Use", 
   "description" : "The purpose of a work in the context of education; for example, &#x27;assignment&#x27;, &#x27;group work&#x27;.", 
 "type":  "string" 
 }); 
@@ -229,20 +260,23 @@ AboutPage.property('educationalUse', {
 
 AboutPage.property('encoding', {
   "name" : "encoding", 
+  "displayName" : "Encoding", 
   "description" : "A media object that encode this CreativeWork.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "MediaObject" } }  
+"type":"object","properties" : {"MediaObject" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('encodings', {
   "name" : "encodings", 
+  "displayName" : "Encodings", 
   "description" : "The media objects that encode this creative work (legacy spelling; see singular form, encoding).", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "MediaObject" } }  
+"type":"object","properties" : {"MediaObject" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('genre', {
   "name" : "genre", 
+  "displayName" : "Genre", 
   "description" : "Genre of the creative work", 
 "type":  "string" 
 }); 
@@ -250,6 +284,7 @@ AboutPage.property('genre', {
 
 AboutPage.property('headline', {
   "name" : "headline", 
+  "displayName" : "Headline", 
   "description" : "Headline of the article", 
 "type":  "string" 
 }); 
@@ -257,6 +292,7 @@ AboutPage.property('headline', {
 
 AboutPage.property('inLanguage', {
   "name" : "inLanguage", 
+  "displayName" : "In Language", 
   "description" : "The language of the content. please use one of the language codes from the IETF BCP 47 standard.", 
 "type":  "string" 
 }); 
@@ -264,6 +300,7 @@ AboutPage.property('inLanguage', {
 
 AboutPage.property('interactionCount', {
   "name" : "interactionCount", 
+  "displayName" : "Interaction Count", 
   "description" : "A count of a specific user interactions with this item—for example, 20 UserLikes, 5 UserComments, or 300 UserDownloads. The user interaction type should be one of the sub types of UserInteraction.", 
 "type":  "string" 
 }); 
@@ -271,6 +308,7 @@ AboutPage.property('interactionCount', {
 
 AboutPage.property('interactivityType', {
   "name" : "interactivityType", 
+  "displayName" : "Interactivity Type", 
   "description" : "The predominant mode of learning supported by the learning resource. Acceptable values are &#x27;active&#x27;, &#x27;expositive&#x27;, or &#x27;mixed&#x27;.", 
 "type":  "string" 
 }); 
@@ -278,13 +316,15 @@ AboutPage.property('interactivityType', {
 
 AboutPage.property('isBasedOnUrl', {
   "name" : "isBasedOnUrl", 
-  "description" : "A resource that was used in the creation of this resource. This term can be repeated for multiple sources. For example, http:&#x2F;&#x2F;example.com&#x2F;great-multiplication-intro.html", 
+  "displayName" : "Is Basedonurl", 
+  "description" : "A resource that was used in the creation of this resource. This term can be repeated for multiple sources. For example, http://example.com/great-multiplication-intro.html", 
 "type":  "string" 
 }); 
 
 
 AboutPage.property('isFamilyFriendly', {
   "name" : "isFamilyFriendly", 
+  "displayName" : "Is Familyfriendly", 
   "description" : "Indicates whether this content is family friendly.", 
 "type":  "boolean" 
 }); 
@@ -292,13 +332,15 @@ AboutPage.property('isFamilyFriendly', {
 
 AboutPage.property('keywords', {
   "name" : "keywords", 
-  "description" : "The keywords&#x2F;tags used to describe this content.", 
+  "displayName" : "Keywords", 
+  "description" : "The keywords/tags used to describe this content.", 
 "type":  "string" 
 }); 
 
 
 AboutPage.property('learningResourceType', {
   "name" : "learningResourceType", 
+  "displayName" : "Learning Resourcetype", 
   "description" : "The predominant type or kind characterizing the learning resource. For example, &#x27;presentation&#x27;, &#x27;handout&#x27;.", 
 "type":  "string" 
 }); 
@@ -306,34 +348,39 @@ AboutPage.property('learningResourceType', {
 
 AboutPage.property('mentions', {
   "name" : "mentions", 
+  "displayName" : "Mentions", 
   "description" : "Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Thing" } }  
+"type":"object","properties" : {"Thing" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('offers', {
   "name" : "offers", 
+  "displayName" : "Offers", 
   "description" : "An offer to sell this item—for example, an offer to sell a product, the DVD of a movie, or tickets to an event.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Offer" } }  
+"type":"object","properties" : {"Offer" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('provider', {
   "name" : "provider", 
+  "displayName" : "Provider", 
   "description" : "Specifies the Person or Organization that distributed the CreativeWork.", 
-"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Organization" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Person" }}}} 
+"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('publisher', {
   "name" : "publisher", 
+  "displayName" : "Publisher", 
   "description" : "The publisher of the creative work.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Organization" } }  
+"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('publishingPrinciples', {
   "name" : "publishingPrinciples", 
+  "displayName" : "Publishing Principles", 
   "description" : "Link to page describing the editorial principles of the organization primarily responsible for the creation of the CreativeWork.", 
 "type":  "string" 
 }); 
@@ -341,27 +388,31 @@ AboutPage.property('publishingPrinciples', {
 
 AboutPage.property('review', {
   "name" : "review", 
+  "displayName" : "Review", 
   "description" : "A review of the item.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Review" } }  
+"type":"object","properties" : {"Review" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('reviews', {
   "name" : "reviews", 
+  "displayName" : "Reviews", 
   "description" : "Review of the item (legacy spelling; see singular form, review).", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Review" } }  
+"type":"object","properties" : {"Review" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('sourceOrganization', {
   "name" : "sourceOrganization", 
+  "displayName" : "Source Organization", 
   "description" : "The Organization on whose behalf the creator was working.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Organization" } }  
+"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('text', {
   "name" : "text", 
+  "displayName" : "Text", 
   "description" : "The textual content of this CreativeWork.", 
 "type":  "string" 
 }); 
@@ -369,6 +420,7 @@ AboutPage.property('text', {
 
 AboutPage.property('thumbnailUrl', {
   "name" : "thumbnailUrl", 
+  "displayName" : "Thumbnail Url", 
   "description" : "A thumbnail image relevant to the Thing.", 
 "type":  "string" 
 }); 
@@ -376,13 +428,15 @@ AboutPage.property('thumbnailUrl', {
 
 AboutPage.property('timeRequired', {
   "name" : "timeRequired", 
+  "displayName" : "Time Required", 
   "description" : "Approximate or typical time it takes to work with or through this learning resource for the typical intended target audience, e.g. &#x27;P30M&#x27;, &#x27;P1H25M&#x27;.", 
- "type":"object", "properties" : { "id":{"type" : "array"},"ResourceType" :{"type" : "string", "default" :"Duration" } }  
+"type":  "string" 
 }); 
 
 
 AboutPage.property('typicalAgeRange', {
   "name" : "typicalAgeRange", 
+  "displayName" : "Typical Agerange", 
   "description" : "The typical range of ages the content&#x27;s intendedEndUser, for example &#x27;7-9&#x27;, &#x27;11-&#x27;.", 
 "type":  "string" 
 }); 
@@ -390,6 +444,7 @@ AboutPage.property('typicalAgeRange', {
 
 AboutPage.property('version', {
   "name" : "version", 
+  "displayName" : "Version", 
   "description" : "The version of the CreativeWork embodied by a specified resource.", 
 "type":  "number" 
 }); 
@@ -397,8 +452,9 @@ AboutPage.property('version', {
 
 AboutPage.property('video', {
   "name" : "video", 
+  "displayName" : "Video", 
   "description" : "An embedded video object.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "VideoObject" } }  
+"type":"object","properties" : {"VideoObject" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
@@ -407,6 +463,7 @@ exports.AboutPage = AboutPage;
 
 AboutPage.property('breadcrumb', {
   "name" : "breadcrumb", 
+  "displayName" : "Breadcrumb", 
   "description" : "A set of links that can help a user understand and navigate a website hierarchy.", 
 "type":  "string" 
 }); 
@@ -414,34 +471,39 @@ AboutPage.property('breadcrumb', {
 
 AboutPage.property('isPartOf', {
   "name" : "isPartOf", 
+  "displayName" : "Is Partof", 
   "description" : "Indicates the collection or gallery to which the item belongs.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "CollectionPage" } }  
+"type":"object","properties" : {"CollectionPage" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('lastReviewed', {
   "name" : "lastReviewed", 
-  "description" : "Date on which the content on this web page was last reviewed for accuracy and&#x2F;or completeness.", 
-"type":  "string" 
+  "displayName" : "Last Reviewed", 
+  "description" : "Date on which the content on this web page was last reviewed for accuracy and/or completeness.", 
+"type":  "date" 
 }); 
 
 
 AboutPage.property('mainContentOfPage', {
   "name" : "mainContentOfPage", 
+  "displayName" : "Main Contentofpage", 
   "description" : "Indicates if this web page element is the main subject of the page.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "WebPageElement" } }  
+"type":"object","properties" : {"WebPageElement" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('primaryImageOfPage', {
   "name" : "primaryImageOfPage", 
+  "displayName" : "Primary Imageofpage", 
   "description" : "Indicates the main image on the page", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "ImageObject" } }  
+"type":"object","properties" : {"ImageObject" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('relatedLink', {
   "name" : "relatedLink", 
+  "displayName" : "Related Link", 
   "description" : "A link related to this web page, for example to other related web pages.", 
 "type":  "string" 
 }); 
@@ -449,13 +511,15 @@ AboutPage.property('relatedLink', {
 
 AboutPage.property('reviewedBy', {
   "name" : "reviewedBy", 
-  "description" : "People or organizations that have reviewed the content on this web page for accuracy and&#x2F;or completeness.", 
-"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Organization" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" } ,                     "ResourceType" : {"type" :"string" ,                                         "default" : "Person" }}}} 
+  "displayName" : "Reviewed by", 
+  "description" : "People or organizations that have reviewed the content on this web page for accuracy and/or completeness.", 
+"type":"object","properties" : {"Organization" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}},"Person" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 
 AboutPage.property('significantLink', {
   "name" : "significantLink", 
+  "displayName" : "Significant Link", 
   "description" : "One of the more significant URLs on the page. Typically, these are the non-navigation links that are clicked on the most.", 
 "type":  "string" 
 }); 
@@ -463,6 +527,7 @@ AboutPage.property('significantLink', {
 
 AboutPage.property('significantLinks', {
   "name" : "significantLinks", 
+  "displayName" : "Significant Links", 
   "description" : "The most significant URLs on the page. Typically, these are the non-navigation links that are clicked on the most (legacy spelling; see singular form, significantLink).", 
 "type":  "string" 
 }); 
@@ -470,8 +535,9 @@ AboutPage.property('significantLinks', {
 
 AboutPage.property('specialty', {
   "name" : "specialty", 
+  "displayName" : "Specialty", 
   "description" : "One of the domain specialities to which this web page&#x27;s content applies.", 
- "type":"object",  "properties" : {           "id":{"type" : "array"},           "ResourceType" :{"type" : "string", "default" : "Specialty" } }  
+"type":"object","properties" : {"Specialty" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
 }); 
 
 

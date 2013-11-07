@@ -15,11 +15,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -31,11 +27,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -47,11 +39,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -63,11 +51,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -79,11 +63,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -95,11 +75,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -119,11 +95,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Organization"
+                        "type": "Array"
                       }
                     }
                   },
@@ -131,11 +103,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Person"
+                        "type": "Array"
                       }
                     }
                   }
@@ -149,11 +117,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "DateTime"
+                    "type": "DateTime"
                   }
                 }
               }
@@ -164,12 +128,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Thing"
+                  "Thing": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -184,11 +149,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Place"
+                        "type": "Array"
                       }
                     }
                   },
@@ -196,11 +157,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "PostalAddress"
+                        "type": "Array"
                       }
                     }
                   }
@@ -213,12 +170,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Thing"
+                  "Thing": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -233,11 +191,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Organization"
+                        "type": "Array"
                       }
                     }
                   },
@@ -245,11 +199,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Person"
+                        "type": "Array"
                       }
                     }
                   }
@@ -262,12 +212,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Thing"
+                  "Thing": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -279,11 +230,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "DateTime"
+                    "type": "DateTime"
                   }
                 }
               }
@@ -299,12 +246,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Thing"
+                  "Thing": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -315,12 +263,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Language"
+                  "Language": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -335,11 +284,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Audience"
+                        "type": "Array"
                       }
                     }
                   },
@@ -347,11 +292,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Organization"
+                        "type": "Array"
                       }
                     }
                   },
@@ -359,11 +300,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Person"
+                        "type": "Array"
                       }
                     }
                   }
@@ -381,12 +318,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Event"
+                  "Event": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }

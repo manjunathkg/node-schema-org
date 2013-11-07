@@ -15,11 +15,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -31,11 +27,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -47,11 +39,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -63,11 +51,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -79,11 +63,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -95,11 +75,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -115,12 +91,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "QuantitativeValue"
+                  "QuantitativeValue": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -131,12 +108,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "PriceSpecification"
+                  "PriceSpecification": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -148,11 +126,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Number"
+                    "type": "Number"
                   }
                 }
               }
@@ -164,11 +138,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Number"
+                    "type": "Number"
                   }
                 }
               }
@@ -180,11 +150,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "NumberorText"
+                    "type": "NumberorText"
                   }
                 }
               }
@@ -196,11 +162,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -212,11 +174,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "DateTime"
+                    "type": "DateTime"
                   }
                 }
               }
@@ -228,11 +186,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "DateTime"
+                    "type": "DateTime"
                   }
                 }
               }
@@ -244,11 +198,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Boolean"
+                    "type": "Boolean"
                   }
                 }
               }

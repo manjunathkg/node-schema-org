@@ -15,11 +15,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -31,11 +27,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -47,11 +39,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -63,11 +51,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -79,11 +63,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -95,11 +75,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -116,11 +92,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "NumberorText"
+                    "type": "NumberorText"
                   }
                 }
               }
@@ -132,11 +104,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -148,11 +116,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "NumberorText"
+                    "type": "NumberorText"
                   }
                 }
               }

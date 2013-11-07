@@ -1,0 +1,213 @@
+/***Generated Resource **/
+
+var resource = require('resource');
+var RiverBodyOfWater = resource.define('RiverBodyOfWater'); 
+
+RiverBodyOfWater.schema.description = "A river (for example, the broad majestic Shannon)."; 
+RiverBodyOfWater.persist('fs'); 
+
+
+RiverBodyOfWater.property('additionalType', {
+  "name" : "additionalType", 
+  "displayName" : "Additional Type", 
+  "description" : "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the &#x27;typeof&#x27; attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
+"type":  "string" 
+}); 
+
+
+RiverBodyOfWater.property('description', {
+  "name" : "description", 
+  "displayName" : "Description", 
+  "description" : "A short description of the item.", 
+"type":  "string" 
+}); 
+
+
+RiverBodyOfWater.property('image', {
+  "name" : "image", 
+  "displayName" : "Image", 
+  "description" : "URL of an image of the item.", 
+"type":  "string" 
+}); 
+
+
+RiverBodyOfWater.property('name', {
+  "name" : "name", 
+  "displayName" : "Name", 
+  "description" : "The name of the item.", 
+"type":  "string" 
+}); 
+
+
+RiverBodyOfWater.property('sameAs', {
+  "name" : "sameAs", 
+  "displayName" : "Same as", 
+  "description" : "URL of a reference Web page that unambiguously indicates the item&#x27;s identity. E.g. the URL of the item&#x27;s Wikipedia page, Freebase page, or official website.", 
+"type":  "string" 
+}); 
+
+
+RiverBodyOfWater.property('url', {
+  "name" : "url", 
+  "displayName" : "Url", 
+  "description" : "URL of the item.", 
+"type":  "string" 
+}); 
+
+
+exports.RiverBodyOfWater = RiverBodyOfWater;
+
+
+RiverBodyOfWater.property('address', {
+  "name" : "address", 
+  "displayName" : "Address", 
+  "description" : "Physical address of the item.", 
+"type":"object","properties" : {"PostalAddress" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
+}); 
+
+
+RiverBodyOfWater.property('aggregateRating', {
+  "name" : "aggregateRating", 
+  "displayName" : "Aggregate Rating", 
+  "description" : "The overall rating, based on a collection of reviews or ratings, of the item.", 
+"type":"object","properties" : {"AggregateRating" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
+}); 
+
+
+RiverBodyOfWater.property('containedIn', {
+  "name" : "containedIn", 
+  "displayName" : "Contained in", 
+  "description" : "The basic containment relation between places.", 
+"type":"object","properties" : {"Place" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
+}); 
+
+
+RiverBodyOfWater.property('event', {
+  "name" : "event", 
+  "displayName" : "Event", 
+  "description" : "Upcoming or past event associated with this place or organization.", 
+"type":"object","properties" : {"Event" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
+}); 
+
+
+RiverBodyOfWater.property('events', {
+  "name" : "events", 
+  "displayName" : "Events", 
+  "description" : "Upcoming or past events associated with this place or organization (legacy spelling; see singular form, event).", 
+"type":"object","properties" : {"Event" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
+}); 
+
+
+RiverBodyOfWater.property('faxNumber', {
+  "name" : "faxNumber", 
+  "displayName" : "Fax Number", 
+  "description" : "The fax number.", 
+"type":  "string" 
+}); 
+
+
+RiverBodyOfWater.property('geo', {
+  "name" : "geo", 
+  "displayName" : "Geo", 
+  "description" : "The geo coordinates of the place.", 
+"type":"object","properties" : {"GeoCoordinates" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}},"GeoShape" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
+}); 
+
+
+RiverBodyOfWater.property('globalLocationNumber', {
+  "name" : "globalLocationNumber", 
+  "displayName" : "Global Locationnumber", 
+  "description" : "The Global Location Number (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.", 
+"type":  "string" 
+}); 
+
+
+RiverBodyOfWater.property('interactionCount', {
+  "name" : "interactionCount", 
+  "displayName" : "Interaction Count", 
+  "description" : "A count of a specific user interactions with this item—for example, 20 UserLikes, 5 UserComments, or 300 UserDownloads. The user interaction type should be one of the sub types of UserInteraction.", 
+"type":  "string" 
+}); 
+
+
+RiverBodyOfWater.property('isicV4', {
+  "name" : "isicV4", 
+  "displayName" : "Isic v4", 
+  "description" : "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.", 
+"type":  "string" 
+}); 
+
+
+RiverBodyOfWater.property('logo', {
+  "name" : "logo", 
+  "displayName" : "Logo", 
+  "description" : "URL of an image for the logo of the item.", 
+"type":"object","properties" : {"ImageObject" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
+}); 
+
+
+RiverBodyOfWater.property('map', {
+  "name" : "map", 
+  "displayName" : "Map", 
+  "description" : "A URL to a map of the place.", 
+"type":  "string" 
+}); 
+
+
+RiverBodyOfWater.property('maps', {
+  "name" : "maps", 
+  "displayName" : "Maps", 
+  "description" : "A URL to a map of the place (legacy spelling; see singular form, map).", 
+"type":  "string" 
+}); 
+
+
+RiverBodyOfWater.property('openingHoursSpecification', {
+  "name" : "openingHoursSpecification", 
+  "displayName" : "Opening Hoursspecification", 
+  "description" : "The opening hours of a certain place.", 
+"type":"object","properties" : {"OpeningHoursSpecification" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
+}); 
+
+
+RiverBodyOfWater.property('photo', {
+  "name" : "photo", 
+  "displayName" : "Photo", 
+  "description" : "A photograph of this place.", 
+"type":"object","properties" : {"ImageObject" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}},"Photograph" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
+}); 
+
+
+RiverBodyOfWater.property('photos', {
+  "name" : "photos", 
+  "displayName" : "Photos", 
+  "description" : "Photographs of this place (legacy spelling; see singular form, photo).", 
+"type":"object","properties" : {"ImageObject" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}},"Photograph" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
+}); 
+
+
+RiverBodyOfWater.property('review', {
+  "name" : "review", 
+  "displayName" : "Review", 
+  "description" : "A review of the item.", 
+"type":"object","properties" : {"Review" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
+}); 
+
+
+RiverBodyOfWater.property('reviews', {
+  "name" : "reviews", 
+  "displayName" : "Reviews", 
+  "description" : "Review of the item (legacy spelling; see singular form, review).", 
+"type":"object","properties" : {"Review" :    {"type" :"object",   "properties" : {                    "id" : { "type" : "array" }}}} 
+}); 
+
+
+RiverBodyOfWater.property('telephone', {
+  "name" : "telephone", 
+  "displayName" : "Telephone", 
+  "description" : "The telephone number.", 
+"type":  "string" 
+}); 
+
+
+exports.RiverBodyOfWater = RiverBodyOfWater;

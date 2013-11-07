@@ -15,11 +15,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -31,11 +27,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -47,11 +39,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -63,11 +51,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -79,11 +63,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -95,11 +75,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "URL"
+                    "type": "URL"
                   }
                 }
               }
@@ -115,12 +91,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "AggregateRating"
+                  "AggregateRating": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -131,12 +108,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Audience"
+                  "Audience": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -151,11 +129,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Brand"
+                        "type": "Array"
                       }
                     }
                   },
@@ -163,11 +137,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Organization"
+                        "type": "Array"
                       }
                     }
                   }
@@ -181,11 +151,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -200,11 +166,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Distance"
+                        "type": "Array"
                       }
                     }
                   },
@@ -212,11 +174,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "QuantitativeValue"
+                        "type": "Array"
                       }
                     }
                   }
@@ -230,11 +188,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -246,11 +200,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -262,11 +212,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -281,11 +227,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Distance"
+                        "type": "Array"
                       }
                     }
                   },
@@ -293,11 +235,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "QuantitativeValue"
+                        "type": "Array"
                       }
                     }
                   }
@@ -310,12 +248,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Product"
+                  "Product": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -326,12 +265,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Product"
+                  "Product": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -342,12 +282,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Product"
+                  "Product": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -358,12 +299,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Product"
+                  "Product": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -374,12 +316,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "OfferItemCondition"
+                  "OfferItemCondition": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -390,12 +333,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "ImageObject"
+                  "ImageObject": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -406,12 +350,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Organization"
+                  "Organization": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -422,12 +367,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "ProductModel"
+                  "ProductModel": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -439,11 +385,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -454,12 +396,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Offer"
+                  "Offer": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -471,11 +414,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -487,11 +426,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Date"
+                    "type": "Date"
                   }
                 }
               }
@@ -502,12 +437,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Review"
+                  "Review": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -518,12 +454,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Review"
+                  "Review": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -535,11 +472,7 @@
                 "type": "object",
                 "properties": {
                   "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "Text"
+                    "type": "Text"
                   }
                 }
               }
@@ -550,12 +483,13 @@
               "type": {
                 "type": "object",
                 "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "ResourceType": {
-                    "type": "string",
-                    "default": "QuantitativeValue"
+                  "QuantitativeValue": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "Array"
+                      }
+                    }
                   }
                 }
               }
@@ -570,11 +504,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "Distance"
+                        "type": "Array"
                       }
                     }
                   },
@@ -582,11 +512,7 @@
                     "type": "object",
                     "properties": {
                       "id": {
-                        "type": "string"
-                      },
-                      "ResourceType": {
-                        "type": "string",
-                        "default": "QuantitativeValue"
+                        "type": "Array"
                       }
                     }
                   }

@@ -21,7 +21,8 @@
     "winston": "~0.6.2",
     "underscore" : "*",
     "underscore.string" : "*",
-    "validator": "0.4.x"
+    "validator": "0.4.x",
+    "change-case" : "*"
   },
   "bin": {
     "read-schema-org": "./bin/read-schema-org",
