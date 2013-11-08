@@ -22,7 +22,8 @@
     "underscore" : "*",
     "underscore.string" : "*",
     "validator": "0.4.x",
-    "change-case" : "*"
+    "change-case" : "*",
+    "sugar" : "*"
   },
   "bin": {
     "read-schema-org": "./bin/read-schema-org",
